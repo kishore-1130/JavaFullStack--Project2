@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory System</h1>
+        
+        <form id="form">
+            <input type="text" id="name" placeholder="Product Name" required>
+            <input type="text" id="sku" placeholder="SKU" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="number" id="qty" placeholder="Quantity" required>
+            <input type="text" id="supplier" placeholder="Supplier" required>
+            <input type="number" id="price" placeholder="Price" step="0.01" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <button type="submit" id="btn">Add</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr><th>#</th><th>Name</th><th>SKU</th><th>Category</th><th>Qty</th><th>Supplier</th><th>Price</th><th>Location</th><th>Action</th></tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
